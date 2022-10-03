@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style.css" rel="stylesheet">
+
+    <title>Challenge 2 - Ahorcado</title>
+  </head>
+  <body onload="dimension();" onresize="dimension();">
+
+    <section>
+	  	<canvas width="1200" height="600"></canvas>
+
+	  	<div class="logo">
+	  		<img src="extras/Logo@2x.png" alt="Alura Logo">	
+	  	</div>
+
+	  	<div class="titulo">
+	  		<h1>Juego del ahorcado</h1>
+	  		<img src="extras/horca.png">
+	  	</div>
+
+	  	<div class="menuPpal">
+	  		<input type="submit" name="boton" value="Comenzar Juego" class="botonIniciar" onclick="iniciar()">
+	  		<input type="submit" name="boton" value="Agregar Palabra" class="botonAgregar" onclick="agregar()">
+	  	</div>
+
+	  	<div class="menuDeJuego">
+	  		<input type="submit" value="Juego Nuevo" class="botonReiniciar" onclick="iniciar()">
+	  		<input type="submit" value="Desistir" class="botonDesistir" onclick="desistir()">	  		
+	  	</div>
+
+	  	<div class="agregarPalabra">
+	  		<input autofocus type="text" placeholder="Ingrese una palabra (Máximo 8 letras)" class="texto">
+	  		<input type="submit" value="Guardar y Empezar" class="botonGuardar" onclick="agregarPalabra()">
+	  		<input type="submit" value="Cancelar" class="botonCancelar" onclick="cancelar()">	  		
+	  	</div>
+
+	  	<div class="copy">
+	  		<p>&copy Copyright Fabián Bustos 2022</p>
+	  		<div class="redes">
+        <a href="https://www.linkedin.com/in/fabian-bustos-sanjuan/" target="_blank" rel="noopener noreferrer">
+          <img src="extras/linkedin_icon.svg" class="lnk" alt="linkedin">
+        </a>
+        <a href="https://github.com/FabioBustosSJ/" target="_blank"
+        rel="noopener noreferrer">
+          <img src="extras/github_icon.svg" class="git" alt="github">
+        </a>
+      </div>
+	  	</div>
+
+  </section>
+  	<script src="canvas.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
